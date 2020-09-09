@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <title>ElChaBo - Ladepunkt</title>
+	<link rel="icon" type="image/png" href="bilder/favicon.png"/>
+  </head>
+  <body>
+    <a href="index.html"><img src="bilder/ElChaBo200x200.png" alt="logo" /></a>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./navigasjon.html">Navigasjon</a></li>
+        <li><a href="./ladepunkt.html">Ladepunkt</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <article>
+        <h1>Førde Båtklubb</h1>
+        <h3>Lokalisering</h3>
+        <p><strong>Adresse:</strong> Firdavegen 22, 6800 Førde </p>
+        <p><strong>GEO posisjon:</strong> 61.458332, 5.845478 </p>
+      </article>
+
+      <article>
+        <h2>Ladepunkt</h2>
+        <table>
+          <tr>
+            <td><strong>ChAdeMO:</strong></td>
+            <td>2/4 ledige</td>
+          </tr>
+          <tr>
+            <td><strong>Effekt opptil:</strong></td>
+            <td>150 kW</td>
+          </tr>
+          <tr>
+            <td><strong>Pris per kWt:</strong></td>
+            <td>100 kr</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td><strong> CCS:</strong></td>
+            <td>4/4 ledige</td>
+          </tr>
+          <tr>
+            <td><strong>Effekt opptil:</strong></td>
+            <td>250 kW</td>
+          </tr>
+          <tr>
+            <td><strong>Pris per kWt:</strong></td>
+            <td>100 kr</td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <h2>Slik ser området ut</h2>
+        <img
+          width="300"
+          height="200"
+          src="bilder/Forde_batklubb.jpg"
+          alt="Vann med hvit bygning"
+        />
+      </article>
+
+      <article>
+        <h2>Finn på kart</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7625.312595238732!2d5.8454838!3d61.4583003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe90af260322e17a0!2zRsO4cmRlIELDpXRrbHViYg!5e0!3m2!1sno!2sno!4v1599663221262!5m2!1sno!2sno" 
+		  width="400" 
+		  height="300"  
+		  allowfullscreen=""  
+		  tabindex="0"
+		>
+		</iframe>"
+
+        
+        
+      </article>
+
+      <article>
+        <h2>Tjenester & fasiliteter</h2>
+        <ul>
+          <li>Kiosk</li>
+          <li>Toalett</li>
+          <li>Overnatting</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Dine parametre</h2>
+        <table>
+          <tr>
+            <td><strong>Batterikapasitet båt:</strong></td>
+            <td
+              ><input
+                type="text"
+                id="batterikapasitet"
+                name="batterikapasitet"
+                placeholder="Din batterikapasitet"
+            /></td>
+          </tr>
+          <tr>
+            <td><strong>Nåværende % strøm:</strong></td>
+            <td
+              ><input
+                type="text"
+                id="presentPower"
+                name="presentPower"
+                placeholder="Nåværende strøm"
+            /></td>
+          </tr>
+          <tr>
+            <td><strong>Ladeeffekt kW:</strong></td>
+            <td>
+              <select id="ladeeffekt" name="ladeeffekt">
+                <option value="70kwh">70 kWh</option>
+                <option value="140kwh">140 kWh</option>
+                <option value="210kwh">210 kWh</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td><strong>Forventet ladetid:</strong></td>
+            <td>{timer}</td>
+          </tr>
+          <tr>
+            <td><strong>Pris:</strong></td>
+            <td>{pris}</td>
+          </tr>
+        </table>
+      </article>
+
+      <article>
+        <h2>Graf</h2>
+        <canvas></canvas>
+      </article>
+    </main>
+  </body>
+</html>
