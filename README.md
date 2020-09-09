@@ -17,7 +17,7 @@ Todo:
 
 Sjekk til samtlige sider:
 
-- Minst 2 overskriftsnivåer (<h1> & <h2>)
+- Minst 2 overskriftsnivåer (\<h1> & \<h2>)
 - Valider HTML: https://validator.w3.org/nu/#textarea
 - Totalt brukt:
 - - Lister / nøstede lister (V)
