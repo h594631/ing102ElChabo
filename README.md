@@ -11,10 +11,6 @@ Google Presentation: https://docs.google.com/presentation/d/1Wp4DbcDH0FMeoKy8Y_D
 Todo:
 
 - Fullføre slides til samtlige sider i Google Presentation
-- Ladepunkt for Førde Marina(elns)
-- Navigasjonsside
-- Innspill til Eivinds beskrivelse på index
-- Validere samtlige html-filer
 
 Sjekk til samtlige sider:
 
