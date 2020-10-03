@@ -1,15 +1,22 @@
 * {
-  padding:0; margin:0;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-head-color: #50963c;
+  --main-bg-color: #f3f8f1;
+  --main-text-color: #5f615f;
 }
 
 body {
-	background-color: #f3f8f1;
+  background-color: var(--main-bg-color);
 }
 
 h1,
 h2,
 h3 {
-	color: #50963c;
+  color: var(--main-head-color);
 }
 
 p,
@@ -17,5 +24,50 @@ ul,
 footer,
 details,
 table {
-	color: #5f615f;
+  color: var(--main-text-color);
 }
+
+/* LADEPUNKT NAVIGASJON START */
+.ladepunktContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-grow: none;
+}
+
+.by {
+  display: block;
+  width: 300px;
+  padding: 1rem 0 0 0;
+  background: var(--main-head-color);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.by ul {
+  padding: 1rem;
+}
+
+.ladested {
+  display: none;
+  font-size: 1rem;
+}
+
+.by:hover ul .ladested {
+  display: block;
+  background: var(--main-bg-color);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.by:hover .ladested:hover {
+  background: white;
+}
+
+.navLink {
+  display: block;
+  padding: 1rem;
+}
+
+/* LADEPUNKT NAVIGASJON SLUTT */
