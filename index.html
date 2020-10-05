@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="style.css"/>
   </head>
 
-  <body>
+  <body onload="slider()">
     <header>
       <a href="index.html"
         ><img src="bilder/ElChaBo200x200.png" alt="logo"
@@ -20,7 +20,22 @@
         <li><a href="navigasjon.html">Navigasjonsside</a></li>
       </ul>
     </nav>
-
+		<img 
+		src="bilder/slideshow/img0.jpg"
+		id="slideshow"
+        height="250"
+        alt="Slideshow av bilder"
+		/>
+	<script ="text/javascript">
+		var i =1;
+		var antallBilder =3;
+		function changeImage() {
+		document.getElementById("slideshow").src = "bilder/slideshow/img" +(i++ % antallBilder) + ".jpg";
+		}
+		function slider(){
+		setInterval(changeImage, 5000);
+		}
+	</script>
     <article>
       <h1> Hva er ElChaBo?</h1>
       <p>
