@@ -9,6 +9,36 @@
   --main-text-color: #5f615f;
 }
 
+html {
+  width: 800px;
+  margin: auto;
+}
+
+header {
+  padding: 1rem;
+  border-bottom: 0;
+}
+
+.navBar {
+  margin: -2rem auto 0 auto;
+}
+
+.navBar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navBar ul li {
+  width: 200px;
+  border: 1px solid black;
+  list-style-type: none;
+}
+
+.navBar ul li a {
+  display: block;
+  padding: 1rem;
+}
+
 body {
   background-color: var(--main-bg-color);
 }
@@ -17,14 +47,21 @@ h1,
 h2,
 h3 {
   color: var(--main-head-color);
+  margin: 1rem;
 }
 
 p,
 ul,
 footer,
 details,
-table {
+table,
+li {
   color: var(--main-text-color);
+  margin: 1rem;
+}
+
+footer {
+  text-align: center;
 }
 
 /* LADEPUNKT NAVIGASJON START */
