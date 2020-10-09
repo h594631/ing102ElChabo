@@ -71,6 +71,9 @@ header {
 
 body {
   background: var(--main-bg-color);
+  height:100vh;
+  display:flex; 
+  flex-direction:column; 
 }
 
 h1,
@@ -91,7 +94,8 @@ li {
 }
 
 footer {
-  text-align: center;
+  margin-top:auto; 
+  min-height:20px;
 }
 
 /* LADEPUNKT NAVIGASJON START */
