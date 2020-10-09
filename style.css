@@ -4,23 +4,42 @@
 }
 
 :root {
-  --main-head-color: #50963c;
+  --main-head-color: #2d5421;
   --main-bg-color: #f3f8f1;
-  --main-text-color: #5f615f;
+  --main-text-color: #474847;
 }
 
 html {
-  width: 800px;
+  max-width: 800px;
   margin: auto;
 }
 
 header {
   padding: 1rem;
   border-bottom: 0;
+  margin-bottom: -2rem;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.border-big {
+  border-radius: 10px 40px 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.border-small {
+  border-radius: 5px 20px 10px;
+}
+
+.creditLink {
+  display: block;
 }
 
 .navBar {
-  margin: -2rem auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .navBar ul {
@@ -30,17 +49,28 @@ header {
 
 .navBar ul li {
   width: 200px;
-  border: 1px solid black;
   list-style-type: none;
 }
 
-.navBar ul li a {
+.navLink {
   display: block;
   padding: 1rem;
+  color: var(--main-head-color);
+  border-radius: 5px 20px 10px;
+  text-decoration: none;
+}
+
+.navLink {
+  color: var(--main-head-color);
+}
+
+.navBar ul li a:hover,
+.navLink:hover {
+  background: white;
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background: var(--main-bg-color);
 }
 
 h1,
@@ -51,10 +81,10 @@ h3 {
 }
 
 p,
-ul,
 footer,
 details,
 table,
+ul,
 li {
   color: var(--main-text-color);
   margin: 1rem;
@@ -69,21 +99,15 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  flex-grow: none;
 }
 
 .by {
   display: block;
   width: 300px;
-  padding: 1rem 0 0 0;
-  background: var(--main-head-color);
-  color: white;
+  padding: 1rem;
   text-align: center;
   font-size: 1.5rem;
-}
-
-.by ul {
-  padding: 1rem;
+  color: var(--main-head-color);
 }
 
 .ladested {
@@ -93,18 +117,29 @@ footer {
 
 .by:hover ul .ladested {
   display: block;
-  background: var(--main-bg-color);
   max-width: 100%;
   overflow: hidden;
 }
 
-.by:hover .ladested:hover {
+.by:hover ul .ladested .navLink:hover {
   background: white;
 }
 
-.navLink {
-  display: block;
-  padding: 1rem;
-}
-
 /* LADEPUNKT NAVIGASJON SLUTT */
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  html {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .ladested {
+    display: block;
+  }
+  li {
+    margin: 0.5rem;
+  }
+}
