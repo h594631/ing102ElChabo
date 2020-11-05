@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="bilder/favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="showimage()">
     <header>
       <a href="index.html"><img src="bilder/ElChaBoMini.png" alt="logo" /></a>
     </header>
@@ -121,6 +121,9 @@
                 <option value="140kwh">140 kWh</option>
                 <option value="210kwh">210 kWh</option>
               </select>
+			  <button onclick="showImage(50)" type="button">50 kW</button>
+			  <button onclick="showImage(150)" type="button">150 kW</button>
+			  <button onclick="showImage(250)" type="button">250 kW</button>
             </td>
           </tr>
         </table>
@@ -140,8 +143,18 @@
       <article class="border-big shadow">
         <h2>Graf</h2>
         <canvas></canvas>
+		
+		<img
+			src="bilder/50.png"
+			id="graph"
+			width="400"
+			alt="graf til ladetid for batteri"
+			class="hidden"
+		/>
       </article>
     </main>
+	
     <footer>Utviklet av guttaBois</footer>
+	<script src="Javascript\graph.js"></script>
   </body>
 </html>
