@@ -19,12 +19,18 @@ header {
   border-bottom: 0;
   margin-bottom: -2rem;
 }
-.visible {
+.visibleA {
   visibility: visible;
 }
 
-.hidden {
+.hiddenA {
   visibility: hidden;
+}
+.visibleB {
+	display: block;
+}
+.hiddenB {
+	display: none;
 }
 .shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);

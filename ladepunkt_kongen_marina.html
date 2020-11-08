@@ -99,65 +99,78 @@
       </article>
 
       <article class="border-big shadow">
-        <h2>Dine parametre</h2>
+        <h2>Graf</h2>
         <table>
           <tr>
             <td><strong>Batterikapasitet båt:</strong></td>
-            <td
-              ><input
-                type="text"
-                id="batterikapasitet"
-                name="batterikapasitet"
-                placeholder="Din batterikapasitet"
-            /></td>
-          </tr>
-          <tr>
-            <td><strong>Nåværende % strøm:</strong></td>
-            <td
-              ><input
-                type="text"
-                id="presentPower"
-                name="presentPower"
-                placeholder="Nåværende strøm"
-            /></td>
-          </tr>
-          <tr>
-            <td><strong>Ladeeffekt kW:</strong></td>
             <td>
-              <select id="ladeeffekt" name="ladeeffekt">
-                <option value="70kwh">70 kWh</option>
-                <option value="140kwh">140 kWh</option>
-                <option value="210kwh">210 kWh</option>
-              </select>
-			  <button onclick="showImage(50)" type="button">50 kW</button>
+              <button onclick="showImage(50)" type="button">50 kW</button>
 			  <button onclick="showImage(150)" type="button">150 kW</button>
 			  <button onclick="showImage(250)" type="button">250 kW</button>
             </td>
           </tr>
         </table>
-
-        <table>
-          <tr>
-            <td><strong>Forventet ladetid:</strong></td>
-            <td>{timer}</td>
-          </tr>
-          <tr>
-            <td><strong>Pris:</strong></td>
-            <td>{pris}</td>
-          </tr>
-        </table>
-      </article>
-
-      <article class="border-big shadow">
-        <h2>Graf</h2>
-        <canvas></canvas>
+		
+		<table 
+			class="hiddenB"
+			id="50"
+			>
+			<tr>
+			<td><strong>Ladehastighet:</strong></td>
+				<td>70kWh |</td>
+				<td>140kWh |</td>
+				<td>210kWh |</td>
+			</tr>
+			<tr>
+			<td><strong>Ladetid i timer:</strong></td>
+				<th>1.4</th>
+				<th>2.8</th>
+				<th>4.2</th>
+			</tr>
+		</table>
+		
+		<table 
+			class="hiddenB"
+			id="150"
+			>
+			<tr>
+			<td><strong>Ladehastighet:</strong></td>
+				<td>70kWh |</td>
+				<td>140kWh |</td>
+				<td>210kWh |</td>
+			</tr>
+			<tr>
+			<td><strong>Ladetid i timer:</strong></td>
+				<th>0.47</th>
+				<th>0.93</th>
+				<th>1.4</th>
+			</tr>
+		</table>
+		
+		<table 
+			class="hiddenB"
+			id="250"
+			>
+			<tr>
+			<td><strong>Ladehastighet:</strong></td>
+				<td>70kWh |</td>
+				<td>140kWh |</td>
+				<td>210kWh |</td>
+			</tr>
+			<tr>
+			<td><strong>Ladetid i timer:</strong></td>
+				<th>0.33</th>
+				<th>0.67</th>
+				<th>1</th>
+			</tr>
+		</table>
 		
 		<img
 			src="bilder/50.png"
 			id="graph"
 			width="400"
 			alt="graf til ladetid for batteri"
-			class="hidden"
+			class="hiddenA"
 		/>
       </article>
     </main>
